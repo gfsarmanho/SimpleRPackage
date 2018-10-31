@@ -2,9 +2,11 @@ Package: SimpleRPackage
 Type: Package
 Title: A simple R package
 Version: 0.1.0
-Author: Gabriel F. Sarmanho
+Authors@R: person(given="Gabriel", family="F. Sarmanho",
+                  role=c("aut", "cre"), email="gabrielfsarmanho@gmail.com")
 Maintainer: Gabriel F. Sarmanho <gabrielfsarmanho@gmail.com>
 Description: A R package to check few development features
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.1.0

@@ -28,4 +28,3 @@ Related sources:
 - [create-packages-r-cran-github](https://www.analyticsvidhya.com/blog/2017/03/create-packages-r-cran-github/)
 - [rstudio-see-git](http://happygitwithr.com/rstudio-see-git.html)
 - [rstudio-changing-origin-for-git-version-control-of-project](https://stackoverflow.com/questions/39435240/rstudio-changing-origin-for-git-version-control-of-project?rq=1)
-
