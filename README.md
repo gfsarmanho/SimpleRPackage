@@ -2,10 +2,12 @@
 
 This R package was created for testing RStudio and git integration, as well other related packages.
 
-Steps for create and deploy it in GitHub:
+You can check its website: [https://gfsarmanho.github.io/SimpleRPackage/](https://gfsarmanho.github.io/SimpleRPackage/)
 
-1. In RStudio: *Project -> Create New Project -> New Directory -> R Package*. Then, fill the informations about the package and check the box "Create a git repository" beore create it;
-2. Change your package, add functions, documentation and build it, following: *Build -> Clean and Rebuild*;
+## Steps for create and deploy it in GitHub:
+
+1. In RStudio: `Project -> Create New Project -> New Directory -> R Package`. Then, fill the informations about the package and check the box "Create a git repository" beore create it;
+2. Change your package, add functions, documentation and build it, following: `Build -> Clean and Rebuild`;
 3. Go to your GitHub account and create a new repository with the same name of your new package; 4. Open your terminal (inside RStudio) and:
    - If that is your first time using git, you will need to associate your GitHub account to the repository. Just change your e-mail and GitHub name by typing:
    ```
@@ -28,3 +30,22 @@ Related sources:
 - [create-packages-r-cran-github](https://www.analyticsvidhya.com/blog/2017/03/create-packages-r-cran-github/)
 - [rstudio-see-git](http://happygitwithr.com/rstudio-see-git.html)
 - [rstudio-changing-origin-for-git-version-control-of-project](https://stackoverflow.com/questions/39435240/rstudio-changing-origin-for-git-version-control-of-project?rq=1)
+
+## Step-by-step to update and generate website:
+
+1. Roxygenize your package
+```r
+devtools::document()
+```
+
+2. Clean and rebuild package
+```
+Rcmd.exe INSTALL --preclean --no-multiarch --with-keep.source SimpleRPackage_master
+```
+
+3. Rebuild website using pkgdown
+```r
+pkgdown::build_news()
+pkgdown::build_site()
+```
+
